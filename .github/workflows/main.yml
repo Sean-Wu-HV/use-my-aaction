@@ -11,7 +11,7 @@ jobs:
         id: hello
         uses: Sean-Wu-HV/my-action@main
         with:
-          help-option: '-h'
+          # help-option: '-h'
           test-option: '--mytest yeah!'
       # Use the output from the `hello` step
       - name: Get the output time
