@@ -9,7 +9,7 @@ jobs:
     steps:
       - name: Hello world action step
         id: hello
-        uses: Sean-Wu-HV/Black-duck-Scan@main
+        uses: Sean-Wu-HV/Black-duck-Scan@YKN-253
         with:
           input-args: '-h'
       # Use the output from the `hello` step
