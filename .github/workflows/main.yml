@@ -12,7 +12,7 @@ jobs:
         uses: Sean-Wu-HV/my-action@main
         with:
           # help-option: '-h'
-          test-option: '--mytest yeah!'
+          test-option: '--mytest yeah1 --mytest2 yeah2'
       # Use the output from the `hello` step
       - name: Get the output time
         run: echo "The time was ${{ steps.hello.outputs.time }}"
