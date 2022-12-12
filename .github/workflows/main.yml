@@ -22,4 +22,4 @@ jobs:
             image: blackducksoftware/detect:8
             options: -v ${{ github.workspace }}:/tmp --entrypoint "/bin/bash"
             run: |
-              ls -la /tmp/semicolon_delimited_script
+              ls -la /tmp
