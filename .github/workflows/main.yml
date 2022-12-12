@@ -27,3 +27,4 @@ jobs:
               ls -la 
               ls -la / 
               ls -la /tmp
+              ls -la /tmp/semicolon_delimited_script
