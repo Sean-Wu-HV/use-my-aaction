@@ -24,6 +24,6 @@ jobs:
             run: |
               pwd
               whoami
-              ls -la \
-              ls -la / \
+              ls -la 
+              ls -la / 
               ls -la /tmp
