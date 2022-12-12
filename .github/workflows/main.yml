@@ -19,8 +19,8 @@ jobs:
       - name: Blackduck Scan
         uses: addnab/docker-run-action@v3
         with:
-            image: alpine # blackducksoftware/detect:8
-            # options: -v ${{ github.workspace }}:/tmp --entrypoint "/bin/bash"
+            image: blackducksoftware/detect:8
+            options: -v ${{ github.workspace }}:/tmp
             run: |
               pwd
               whoami
