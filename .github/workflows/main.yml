@@ -19,9 +19,9 @@ jobs:
       - name: Blackduck Scan
         uses: addnab/docker-run-action@v3
         with:
-            image: docker.repo.orl.eng.hitachivantara.com/blackducksoftware/detect:8
+            image: blackducksoftware/detect:8
             options: -v ${{ github.workspace }}:/tmp --entrypoint "/bin/sh"
             run: |
-              ls -la
-              ls -la /
+              ls -la \
+              ls -la / \
               ls -la /tmp
