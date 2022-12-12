@@ -15,3 +15,13 @@ jobs:
       # Use the output from the `hello` step
       - name: Get the output time
         run: echo "The time was ${{ steps.hello.outputs.time }}"
+        
+      - name: Blackduck Scan
+        uses: addnab/docker-run-action@v3
+        with:
+            image: docker.repo.orl.eng.hitachivantara.com/blackducksoftware/detect:8
+            options: -v ${{ github.workspace }}:/tmp --entrypoint "/bin/sh"
+            run: |
+              ls -la
+              ls -la /
+              ls -la /tmp
