@@ -9,10 +9,9 @@ jobs:
     steps:
       - name: Hello world action step
         id: hello
-        uses: Sean-Wu-HV/my-action@main
+        uses: Sean-Wu-HV/Black-duck-Scan@main
         with:
-          # help-option: '-h'
-          test-option: '--mytest yeah1 --mytest2 yeah2'
+          input-args: '-h'
       # Use the output from the `hello` step
       - name: Get the output time
         run: echo "The time was ${{ steps.hello.outputs.time }}"
