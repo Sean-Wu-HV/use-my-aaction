@@ -7,6 +7,9 @@ jobs:
     runs-on: ubuntu-latest
     name: A job to say hello
     steps:
+      - name: taggggg
+        run: |
+            echo $GITHUB_ENV
       - name: Hello world action step
         id: hello
         uses: Sean-Wu-HV/Black-duck-Scan@YKN-253
