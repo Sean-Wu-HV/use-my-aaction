@@ -10,7 +10,12 @@ jobs:
       - name: Update image tag
         run: |
           IMAGE_TAG=$(date +'%Y%m%d').${{ github.run_number }}
-          echo "$IMAGE_TAG" >> $GITHUB_ENV
+          echo $IMAGE_TAG
+          
+      - name: See tag
+        run: |
+          echo $IMAGE_TAG
+          
       - name: Hello world action step
         id: hello
         uses: Sean-Wu-HV/Black-duck-Scan@YKN-253
