@@ -17,7 +17,7 @@ jobs:
     runs-on: ubuntu-latest
     name: A job to say hello
     steps:
-      - name: chech dir
+      - name: check dir
         run: |
           ls -la
           
