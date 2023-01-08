@@ -2,10 +2,25 @@ on:
   push:
   workflow_dispatch:
 jobs:
+  prepare_env:
+    runs-on: ubuntu-latest
+    name: job name
+    steps:
+      - name: First step
+        run: |
+          pwd
+          whoami
+          ls -la
+          mkdir test123
+          
   hello_world_job:
     runs-on: ubuntu-latest
     name: A job to say hello
     steps:
+      - name: chech dir
+        run: |
+          ls -la
+          
       - name: Update image tag
         run: |
           IMAGE_TAG=$(date +'%Y%m%d')-${{ github.run_number }}
