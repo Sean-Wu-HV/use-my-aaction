@@ -8,10 +8,10 @@ jobs:
     steps:
       - name: First step
         run: |
-          pwd
-          whoami
-          ls -la
-          mkdir test123
+          echo $(pwd)
+          echo $(whoami)
+          echo $(ls -la)
+          echo $(mkdir test123)
           
   hello_world_job:
     runs-on: ubuntu-latest
@@ -19,7 +19,7 @@ jobs:
     steps:
       - name: check dir
         run: |
-          ls -la
+          echo $(ls -la)
           
       - name: Update image tag
         run: |
